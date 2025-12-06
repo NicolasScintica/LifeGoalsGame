@@ -25,6 +25,41 @@ body {
   padding: 1.5rem;
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #ede9fe, #e0f2fe);
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+}
+
+.hero-text h2 {
+  margin: 0.2rem 0 0.5rem;
+}
+
+.hero-panel {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+}
+
+.hero-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.tab-content {
+  margin-top: 1rem;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -39,6 +74,14 @@ h1 {
 
 .text-muted {
   color: #64748b;
+}
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #475569;
+  margin: 0;
 }
 
 .card-grid {
@@ -236,5 +279,9 @@ button.ghost {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
   }
 }
