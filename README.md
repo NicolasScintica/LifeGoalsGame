@@ -17,15 +17,20 @@ A lightweight React + TypeScript web app for tracking life categories, monthly X
    ```
 
 ## GitHub Pages deployment
-1. Set the Vite base path to the repo name (already set to `/LifeGoalsGame/` in `vite.config.ts`).
-2. Deploy the built `dist` folder to a `gh-pages` branch:
+The repo now includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that builds the Vite app and ships the contents of
+`dist` to GitHub Pages. Use it to avoid a blank `index.html` being served without the compiled bundle.
+
+1. Confirm the Vite base path matches the repo name (already `/LifeGoalsGame/` in `vite.config.ts`).
+2. In GitHub **Settings → Pages**, set **Source** to **GitHub Actions**.
+3. Push to `main` (or run the workflow manually from the **Actions** tab); the workflow installs deps, runs `npm run build`, and
+   publishes `dist` to Pages.
+4. Your site will be available at `https://<your-username>.github.io/LifeGoalsGame/` once the deploy job finishes.
+5. If you prefer the manual `gh-pages` branch approach, keep using:
    ```bash
    npm install
    npm run deploy
    ```
-   This uses the included `gh-pages` script to publish `dist` automatically.
-3. In GitHub, open **Settings → Pages** and choose **Deploy from a branch**, select the `gh-pages` branch and the `/` (root) folder.
-4. Wait for the Pages build to complete, then visit `https://<your-username>.github.io/LifeGoalsGame/`.
+   Then point Pages to the `gh-pages` branch root.
 
 ## If Node/npm are missing
 This project relies on Node (18+ recommended). If `node -v` or `npm -v` fail, install with one of these common options:

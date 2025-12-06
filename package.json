@@ -1,0 +1,27 @@
+{
+  "name": "lifegoalsgame",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Life Goals XP Tracker — React + TypeScript Vite app for yearly life tracking with localStorage",
+  "type": "module",
+  "homepage": "https://<your-username>.github.io/LifeGoalsGame/",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "echo 'Add your linter here'",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
