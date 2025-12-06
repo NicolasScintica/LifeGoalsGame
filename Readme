@@ -1,1 +1,25 @@
+# Life Goals XP Tracker
 
+A lightweight React + TypeScript web app for tracking life categories, monthly XP, bonus quests, and a year capsule — all stored locally in your browser.
+
+## Getting started
+1. Install dependencies (Node 18+):
+   ```bash
+   npm install
+   ```
+2. Run the dev server:
+   ```bash
+   npm run dev
+   ```
+3. Build for production:
+   ```bash
+   npm run build && npm run preview
+   ```
+
+## Features
+- Hard-coded six life categories with icons and colors.
+- Monthly review cards with 0–3 XP selector and reflection prompts.
+- Bonus quest log that can award XP to categories.
+- Year capsule for memories, wins, lessons, dreams, quotes, and more with filters and search.
+- Anchor goals per category and yearly dashboard summaries.
+- Data persisted to `localStorage` under one key (`xp_tracker_state_v1`).
