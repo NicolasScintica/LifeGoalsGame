@@ -50,7 +50,7 @@ const App = () => {
       <div className="hero">
         <div className="hero-text">
           <p className="eyebrow">Monthly ritual • bonus quests • memories</p>
-          <h2>Chart your 2026 XP story in one place</h2>
+          <h2>Chart your {selectedYear} XP story in one place</h2>
           <p className="text-muted">
             Set an anchor goal for each category, record monthly XP, drop in bonus quests, and
             collect memories for your year-end review.
